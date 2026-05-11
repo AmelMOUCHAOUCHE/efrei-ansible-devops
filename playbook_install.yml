@@ -1,15 +1,26 @@
 ---
-
 - name: Installation de la base de données mysql
   hosts: database
   become: true
+  roles:
+    - role: database
 
 - name: Install applicative server
   hosts: api
   become: true
+  roles:
+    - role: runtime
+    - role: app
 
 - name: Installation de nginx
   hosts: nginx
   become: true
+  pre_tasks:
+    - name: Install dirmngr
+      ansible.builtin.apt:
+        name: dirmngr
+        state: present
+        update_cache: true
   roles:
     - { role: geerlingguy.nginx, tags: [ "nginx" ] }
+    - role: webserver

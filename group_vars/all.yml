@@ -11,6 +11,7 @@ nginx_tcp_nopush: "on"
 nginx_tcp_nodelay: "on"
 nginx_keepalive_timeout: "5"
 nginx_server_tokens: "off"
+nginx_ppa_use: false
 nginx_extra_conf_options: |
   worker_rlimit_nofile 65000;
 nginx_extra_http_options: |
