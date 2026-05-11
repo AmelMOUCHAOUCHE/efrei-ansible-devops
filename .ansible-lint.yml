@@ -1,8 +1,8 @@
 ---
-
 exclude_paths:
   - .ansible
   - .virtualenv
   - roles
 skip_list:
   - experimental
+  - yaml[empty-lines]
