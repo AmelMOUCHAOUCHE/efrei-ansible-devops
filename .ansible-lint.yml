@@ -5,4 +5,7 @@ exclude_paths:
   - roles
 skip_list:
   - experimental
+  # yaml[empty-lines] ignoré car le bloc content: du service systemd
+  # dans roles/app/tasks/main.yml contient des lignes vides nécessaires
+  # pour la syntaxe du fichier systemd [Unit], [Service], [Install]
   - yaml[empty-lines]
