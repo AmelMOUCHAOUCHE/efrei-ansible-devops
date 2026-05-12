@@ -30,6 +30,7 @@ provisioner:
   name: ansible
   env:
     ANSIBLE_CONFIG: ../../ansible.cfg
+    ANSIBLE_VAULT_PASSWORD_FILE: ../../.devops_vault_pass.txt
   inventory:
     links:
       hosts: ../../hosts/hosts_dev
@@ -42,4 +43,3 @@ verifier:
   name: testinfra
   options:
     sudo: true
-

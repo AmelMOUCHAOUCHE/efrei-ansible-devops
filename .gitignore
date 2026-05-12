@@ -9,3 +9,4 @@ roles/*
 *.iws
 *vault_pass*.txt
 .ansible
+.vault_pass
