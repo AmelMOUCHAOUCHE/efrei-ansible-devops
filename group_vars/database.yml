@@ -1,3 +1,6 @@
 ---
-
-# Configuration dédiée au groupe de la BDD
+# Variables spécifiques à la base de données
+db_name: devops_db
+db_user: devops_user
+db_password: devops_password
+db_host: localhost

@@ -1,0 +1,4 @@
+---
+# Variables spécifiques à l'environnement dev
+env: dev
+app_debug: true

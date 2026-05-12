@@ -1,3 +1,5 @@
 ---
-
-# Configuration dédiée au groupe de l'API
+# Variables spécifiques à l'API Node.js
+app_port: 3000
+app_dir: /opt/devops-api
+app_user: root
