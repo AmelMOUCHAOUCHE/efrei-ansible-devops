@@ -24,3 +24,4 @@
   roles:
     - { role: geerlingguy.nginx, tags: [ "nginx" ] }
     - role: webserver
+    - role: certbot
